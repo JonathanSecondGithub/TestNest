@@ -27,6 +27,8 @@ def student():
 
 @app.route('/student/test')
 def studenttest():
-                return render_template('studenttest.html')
+            return render_template('studenttest.html')
 
-
+@app.route('/teacher/questions')
+def question():
+                return render_template('question.html')
