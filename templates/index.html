@@ -1,5 +1,66 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			    <title>Split Webpage</title>
+			        <style>
+        body {
+		            margin: 0;
+			                padding: 0;
+					            font-family: Arial, sans-serif;
+						                display: flex;
+								            height: 100vh;
+									            }
 
-{% block content %}
-    <h1>{% block title %} Home page{% endblock %}</h1>
-{% endblock %}
+	        .left-side {
+			            flex: 1;
+				                background-color: lightblue;
+						            display: flex;
+							                flex-direction: column;
+									            justify-content: center;
+										                align-items: center;
+												        }
+
+		        .right-side {
+				            flex: 1;
+					                background-color: pink;
+							            display: flex;
+								                flex-direction: column;
+										            justify-content: center;
+											                align-items: center;
+													        }
+
+			        .content {
+					            text-align: center;
+						                margin: 20px;
+								        }
+
+				        .button {
+						            padding: 10px 20px;
+							                background-color: white;
+									            border: none;
+										                border-radius: 5px;
+												            cursor: pointer;
+													                font-size: 16px;
+															        }
+					    </style>
+	</head>
+	<body>
+		    <div class="left-side">
+			            <div class="content">
+					                <h1>Welcome to the Left Side</h1>
+							            <p>This is the light blue side of the webpage.</p>
+								                <button class="button">Click me</button>
+										        </div>
+											    </div>
+											        <div class="right-side">
+													        <div class="content">
+															            <h1>Welcome to the Right Side</h1>
+																                <p>This is the pink side of the webpage.</p>
+																		            <button class="button">Click me</button>
+																			            </div>
+																				        </div>
+	</body>
+</html>
+
