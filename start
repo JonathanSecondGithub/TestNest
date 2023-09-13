@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#script to start virtual environment
+
+source dev-env/bin/activate

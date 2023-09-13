@@ -1,5 +1,75 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-    <h1>{% block title %} StudentTest Page {% endblock %}</h1>
-{% endblock %}
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			    <title>Sample Exam Test</title>
+			        <style>
+        body {
+		            background-color: lightblue;
+			                font-family: Arial, sans-serif;
+					            color: white;
+						                padding: 20px;
+								        }
+
+	        header {
+			            padding: 10px;
+				                border-bottom: 2px solid white;
+						            margin-bottom: 20px;
+							            }
+
+		        #timer {
+				            float: right;
+					                background-color: white;
+							            color: red;
+								                padding: 5px 10px;
+										            border-radius: 5px;
+											            }
+
+			        .question-section {
+					            border: 2px solid white;
+						                padding: 20px;
+								            border-radius: 10px;
+									                margin-bottom: 20px;
+											        }
+
+				        .answered {
+						            background-color: lightblue;
+							                padding: 5px;
+									            margin: 5px 0;
+										                border-radius: 5px;
+												        }
+					    </style>
+	</head>
+
+	<body>
+		    <header>
+			            <h1>Custom Test Name</h1>
+				            <div id="timer">Time: 00:30:00</div>
+					            <div>Created by: Mr Peters</div>
+						        </header>
+
+							    <div class="question-section">
+								            <h2>Sample Question</h2>
+									            <p>
+										                Which of the following is not a planet in our solar system?
+												        </p>
+													        <ol type="A">
+															            <li>Mars</li>
+																                <li>Pluto</li>
+																		            <li>Venus</li>
+																			                <li>Alpha Centauri</li>
+	
+			</ol>
+
+																						        <button>Submit Answer</button>
+																							    </div>
+
+																							        <h2>Answered Questions:</h2>
+																								    <div class="answered">Question 1: A. Mars</div>
+																								        <div class="answered">Question 2: C. Venus</div>
+	</body>
+
+</html>
+
