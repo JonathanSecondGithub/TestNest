@@ -6,14 +6,27 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-class Teacher(db.Model):
-    id = db.Column (db. Integer, primary_key=True)
-    name = db.Column(db.String(50))
-    tn = db.Column (db.String(100), unique=True)
-
 @app.route('/')
 def index():
-        return render_template('index.html')
+    return render_template('homepage.html', logged_in=True)
+
+
+#new features
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+@app.route('/compiler')
+def compiler():
+    return render_template('compiler.html', langs=langs, logged_in=True)
+
+
+
 
 #routes for teachers
 @app.route('/teacher')
