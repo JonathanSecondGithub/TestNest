@@ -1,9 +1,9 @@
 from flask import Flask, render_template, redirect, Response, jsonify
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 
 #database importations
-'''
-from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity#, jwt_optional
+
+#from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, jwt_optional
 from config import blacklist
 from models.Post import Post
 from config.lang_config import langs
@@ -13,7 +13,7 @@ from routes.api import api
 from routes.user import user
 from routes.post import post
 import random
-'''
+
 '''
 MAX_POSTS_GLOBAL_WALL = 100
 MAX_POSTS_DASHBOARD = 100
@@ -56,6 +56,10 @@ def signup():
 def compiler():
         return render_template('compiler.html')
 
+@app.route('/posts')
+def posts():
+            return render_template('poststest.html')
+
 @app.route('/dashboard')
 #@jwt_required
 def dashboard():
@@ -69,15 +73,13 @@ def dashboard():
                 p = Post.objects(ID=postid)[0].to_mongo()
                 p['by'] = u['username']
                 posts.append(p)
-    posts = posts[:MAX_POSTS_DASHBOARD]
-    random.shuffle(posts)
-    items = []
-    x = Post.objects(originalPostBy=get_jwt_identity())
-    for post in x:
-        item = post.to_mongo()
-        items.append(item)
     '''
-    return render_template('dashboard.html')
+    return render_template('dashboardtest.html')
+
+@app.route('/challenge')
+#@jwt_required
+def challenge():
+        return render_template('challengeform.html'/ ''', langs=langs''' ,logged_in=True)
 
 #routes for teachers
 @app.route('/teacher')
