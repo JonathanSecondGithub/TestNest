@@ -1,13 +1,11 @@
-# CodeBook
+# TestNest
 
 ## About
-
-This is project done in SE fro Python language by : Tejas Ghone,Vatsal Soni, Yashodhan Joshi , Yatharth Vyas
 
 ## About Project
 
 Transform your Ideas into lines of Code
-At CodeBook, our primary goal is to connect like-minded coders and
+At TestNest, our primary goal is to connect like-minded coders and
 provide a platform for them to share their challenges, come up with
 solutions for user submitted problems and compile any code.
 
