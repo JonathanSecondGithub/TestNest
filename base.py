@@ -2,8 +2,8 @@ from flask import Flask, render_template, redirect, Response, jsonify
 #from flask_sqlalchemy import SQLAlchemy
 
 #database importations
-
-#from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, jwt_optional
+'''
+from flask_jwt_extended import JWTManager, jwt_required, get_jwt_identity, jwt_optional
 from config import blacklist
 from models.Post import Post
 from config.lang_config import langs
@@ -14,7 +14,7 @@ from routes.user import user
 from routes.post import post
 import random
 
-'''
+
 MAX_POSTS_GLOBAL_WALL = 100
 MAX_POSTS_DASHBOARD = 100
 
