@@ -61,46 +61,7 @@ the entire website.
 
 ## Glimpse of our TestNest:
 
-#### Main Page
-
 <img src = "./Readme_Img/MainPage.png" alt ="MainPage Screen Screenshot" />
 
-#### Login
 
-<img src = "./Readme_Img/Login.png" alt ="Login Screen Screenshot" />
 
-#### SignUp
-
-<img src = "./Readme_Img/SignUp.png" alt ="SignUp Screen Screenshot" />
-
-#### Home
-
-<img src = "./Readme_Img/Home.png" alt ="Home Screen Screenshot" />
-
-#### MyPost
-
-<img src = "./Readme_Img/MyPost.png" alt ="MyPost Screen Screenshot" />
-
-#### Solving Challenge
-
-<img src = "./Readme_Img/Solving.png" alt ="Solving Screen Screenshot" />
-
-#### View Solution
-
-<img src = "./Readme_Img/Solution.png" alt ="Solution Screen Screenshot" />
-
-#### FindUser
-
-<img src = "./Readme_Img/FIndUser.png" alt ="FindUser Screen Screenshot" />
-
-#### PostChallenge
-
-<img src = "./Readme_Img/PostChallenge.png" alt ="PostChallenge Screen Screenshot" />
-
-#### Online IDE
-
-<img src = "./Readme_Img/OnlineIde.png" alt ="OnlineIde Screen Screenshot" />
-
-#### Mobile View(Responsive)
-
-<img src = "./Readme_Img/Responsive.png" alt ="Responsive Screen Screenshot" />
